@@ -12,7 +12,15 @@
     "name": "jnphgs",
     "url": "https://github.com/jnphgs"
   },
+  "license": "MIT License",
   "dependencies": {
     "com.unity.visualscripting": "1.9.0"
-  }
+  },
+  "samples": [
+    {
+        "displayName": "Example",
+        "description": "Simple Channel Example",
+        "path": "Samples~/Example"
+    }
+  ]
 }
