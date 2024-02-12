@@ -11,5 +11,8 @@
   "author": {
     "name": "jnphgs",
     "url": "https://github.com/jnphgs"
+  },
+  "dependencies": {
+    "com.unity.visualscripting": "1.9.0"
   }
 }
