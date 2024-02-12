@@ -7,7 +7,7 @@ namespace EventChannelUnit.Samples.Example.Runtime
     [RequireComponent(typeof(Image))]
     public class ToggleImage : MonoBehaviour
     {
-        [SerializeField] private ChannelBase<bool> toggleChannel;
+        [SerializeField] private BoolChannel toggleChannel;
         private Image _image;
         private void OnEnable()
         {
