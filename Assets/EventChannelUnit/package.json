@@ -1,0 +1,15 @@
+{
+  "name": "com.jnphgs.event-channel-unit",
+  "version": "1.0.0",
+  "displayName": "Event Channel Unit",
+  "description": "EventUnit for Event Channel",
+  "unity": "2022.3",
+  "keywords": [
+    "assets",
+    "visualscripting"
+  ],
+  "author": {
+    "name": "jnphgs",
+    "url": "https://github.com/jnphgs"
+  }
+}
