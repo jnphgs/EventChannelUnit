@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f8434c4988c34431bc79ba260518249, type: 3}
-  m_Name: ViCh_ImageVisibility
+  m_Script: {fileID: 11500000, guid: 3f992883684444a5a7543143b8812991, type: 3}
+  m_Name: VCh_TransitionToDefault
   m_EditorClassIdentifier: 
-  index: 0
+  description: The event of transition to the Default state
