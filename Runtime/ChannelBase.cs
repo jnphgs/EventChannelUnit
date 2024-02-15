@@ -61,11 +61,11 @@ namespace EventChannelUnit.Runtime
             base.StartListening(stack);
         }
 
-        protected override void StopListening(GraphStack stack, bool destroyed)
+        public override void StopListening(GraphStack stack)
         {
             GraphGameObject = null;
             GraphReference = null;
-            base.StopListening(stack, destroyed);
+            base.StopListening(stack);
         }
         public override string ToString()
         {
@@ -94,9 +94,9 @@ namespace EventChannelUnit.Runtime
             if (_channel) _channel.OnEventRaised += RaiseEvent;
         }
 
-        protected override void StopListening(GraphStack stack, bool destroyed)
+        public override void StopListening(GraphStack stack)
         {
-            base.StopListening(stack, destroyed);
+            base.StopListening(stack);
             if (_channel) _channel.OnEventRaised -= RaiseEvent;
         }
         private void RaiseEvent()
@@ -128,9 +128,9 @@ namespace EventChannelUnit.Runtime
             if (_channel) _channel.OnEventRaised += RaiseEvent;
         }
 
-        protected override void StopListening(GraphStack stack, bool destroyed)
+        public override void StopListening(GraphStack stack)
         {
-            base.StopListening(stack, destroyed);
+            base.StopListening(stack);
             if (_channel) _channel.OnEventRaised -= RaiseEvent;
         }
         protected override void AssignArguments(Flow flow, T0 data)
