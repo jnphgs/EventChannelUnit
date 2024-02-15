@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bae86bfa1e4ba49af940308fc5748789, type: 3}
-  m_Name: SCh_TestString
+  m_Script: {fileID: 11500000, guid: 3f992883684444a5a7543143b8812991, type: 3}
+  m_Name: VCh_TransitionToAddSphere
   m_EditorClassIdentifier: 
-  description: 
+  description: The event of transition to the AddSphere state

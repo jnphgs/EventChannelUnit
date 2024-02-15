@@ -10,5 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2a5b6cd803b4bf8b2e138bb1ce01f32, type: 3}
-  m_Name: BCh_ToggleImage
+  m_Name: BCh_ShowDefault
   m_EditorClassIdentifier: 
+  description: The event of showing Default panel
