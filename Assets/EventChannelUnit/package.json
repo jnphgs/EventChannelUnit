@@ -14,7 +14,7 @@
   },
   "license": "MIT License",
   "dependencies": {
-    "com.unity.visualscripting": "1.9.0"
+    "com.unity.visualscripting": "1.9.1"
   },
   "samples": [
     {
