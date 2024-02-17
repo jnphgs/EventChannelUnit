@@ -1,6 +1,6 @@
 {
   "name": "com.jnphgs.event-channel-unit",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "displayName": "Event Channel Unit",
   "description": "EventUnit for Event Channel",
   "unity": "2022.3",
