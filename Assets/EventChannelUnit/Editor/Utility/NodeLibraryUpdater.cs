@@ -1,19 +1,24 @@
 using Unity.VisualScripting;
-using UnityEditor.Callbacks;
+using UnityEditor;
 
 namespace EventChannelUnit.Editor.Utility
 {
+    [InitializeOnLoad]
     public static class NodeLibraryUpdater
     {
         private const string RuntimeAssemblyName = "EventChannelUnit.Runtime";
-        
-        [DidReloadScripts]
-        private static void OnScriptReloaded()
-        {
-            UpdateAssemblyOptions();
-        }
 
-        private static void UpdateAssemblyOptions()
+        static NodeLibraryUpdater()
+        {
+            var coreConfig = BoltCore.Configuration;
+            var assemblyOptionsMetadata = coreConfig.GetMetadata(nameof(coreConfig.assemblyOptions));
+            if(!assemblyOptionsMetadata.Contains((LooseAssemblyName)RuntimeAssemblyName))
+            {
+                EditorApplication.delayCall += AddAssemblyOptions;
+            }
+        }
+        
+        private static void AddAssemblyOptions()
         {
             var coreConfig = BoltCore.Configuration;
             var assemblyOptionsMetadata = coreConfig.GetMetadata(nameof(coreConfig.assemblyOptions));
@@ -21,7 +26,7 @@ namespace EventChannelUnit.Editor.Utility
             {
                 assemblyOptionsMetadata.Add((LooseAssemblyName)RuntimeAssemblyName);
                 assemblyOptionsMetadata.Save();
-                assemblyOptionsMetadata.configuration.SaveProjectSettingsAsset(true);
+                coreConfig.SaveProjectSettingsAsset(true);
                 Codebase.UpdateSettings();
                 UnitBase.Rebuild();
             }
