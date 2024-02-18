@@ -1,5 +1,10 @@
 # Event Channel Unit
 
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/jnphgs/EventChannelUnit/main.yml)](https://github.com/jnphgs/EventChannelUnit/actions)
+[![openupm](https://img.shields.io/npm/v/com.jnphgs.event-channel-unit?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.jnphgs.event-channel-unit/)
+[![GitHub Release](https://img.shields.io/github/v/release/jnphgs/EventChannelUnit)](https://github.com/jnphgs/EventChannelUnit/releases)
+
+
 ## Overview
 
 This Package is designed to integrate the EventChannel pattern into Unity's visual scripting environment.
