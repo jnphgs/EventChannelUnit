@@ -27,6 +27,6 @@ jobs:
 
       - name: Tag UPM branch
         run: |
-          git tag upm/${{steps.tag.outputs.name}} \
+          git tag upm/${{steps.tag.outputs.name}}
           git push origin upm/${{steps.tag.outputs.name}}
           
