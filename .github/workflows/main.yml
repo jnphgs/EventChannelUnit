@@ -24,3 +24,9 @@ jobs:
           git-tag: ${{steps.tag.outputs.name}}
           pkg-root-dir-path: Assets/EventChannelUnit
           main-branch: main
+
+      - name: Tag UPM branch
+        run: |
+          git tag upm/${{steps.tag.outputs.name}} \
+          git push origin upm/${{steps.tag.outputs.name}}
+          
