@@ -16,6 +16,8 @@ This makes your game or application architecture cleaner, more modular, and easi
 
 ### Visual Scripting Unit
 
+![vsunits](https://github.com/jnphgs/EventChannelUnit/assets/37029324/67740051-354e-4359-8226-ae663432a19c)
+
 By default, EventUnits are implemented for the following types of EventChannels.
 
 - void
@@ -30,6 +32,8 @@ Additionally, you can trigger an event by calling RaiseEvent() for each EventCha
 
 ### Inspector
 
+![inspector](https://github.com/jnphgs/EventChannelUnit/assets/37029324/8166c971-3aed-44b9-a91a-44810d8f81bf)
+
 When you select an EventChannel asset, these features are available in the inspector to facilitate development:
 
 - **Object Listeners**: Objects currently subscribing to the selected EventChannel asset's event.
@@ -43,9 +47,13 @@ When you select an EventChannel asset, these features are available in the inspe
 
 #### Transition with EventUnit
 
+![ex1](https://github.com/jnphgs/EventChannelUnit/assets/37029324/cd95fcb3-0cf2-4b65-abd0-156e68a90443)
+
 In this example, we subscribe to an event from VoidChannel and transition without arguments, but you can also control the transition by branching conditions based on arguments.
 
 #### Raize Event with State Graph
+
+![ex2](https://github.com/jnphgs/EventChannelUnit/assets/37029324/d40974f5-0aa1-4b11-bd15-4d5e65251879)
 
 In this example, we raise BoolChannel events at the Enter and Exit of the state. 
 These events control the On/Off state of a panel displayed during a specific state.
