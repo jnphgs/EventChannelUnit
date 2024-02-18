@@ -16,8 +16,6 @@ This makes your game or application architecture cleaner, more modular, and easi
 
 ### Visual Scripting Unit
 
-![vsunits](https://github.com/jnphgs/EventChannelUnit/assets/37029324/6928ca42-3048-4b92-bec2-8ac552df094c)
-
 By default, EventUnits are implemented for the following types of EventChannels.
 
 - void
